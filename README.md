@@ -78,6 +78,9 @@ user_id: Permanent user ID.
 user_session: Temporary user’s session ID. Same for each user’s session. Is changed every time user comes back to the online store from a long pause.
 
 ## How to choose storage option
+For detailed Analysis for choosing storage option, check the following links: Part1 and Part2
+[1]: https://scalebydata.com/how-to-choose-storage-option-for-realtime-streaming-case-study/ "Part1"
+[2]: https://scalebydata.com/how-to-choose-storage-option-for-batch-processing-case-study/ "Part2"
 ## streaming pipeline with Google Cloud Dataflow
 ## Batch processing pipeline with Dataproc
 ## How to uild ML model with BigQueryML
