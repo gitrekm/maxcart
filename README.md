@@ -38,6 +38,22 @@ Calculate Customer lifetime value
 visualize sales data per product within 30 to 45 seconds once the payment is done
 
 ## Technical requirements
+### 1. set up thedata pipeline for streaming and batch processing
+
+* Ingest sales data in realtime
+* clean up the data / ensure data quality (missing values and negative ones)
+* prepare the cleaned data to :
+  - Business analysts for visualizations
+  - data scientists and ML engineers to build ML models. ie: probability estimate of a sale for each product
+  instant reaction to retarget customer with abandonment cart by making a new offer to the subscriber and reach it via email in the next 3 minutes (free coupon or free shipping offered)
+* Archive historical data to be re-analyzed by data scientists for future ML models
+
+### 2. set up the CI/CD chain
+
+* automate infra and managed services creation and destruction
+
+* setup continuous integration and continuous delivery chain
+
 ## Dataset
 ## How to choose storage option
 ## streaming pipeline with Google Cloud Dataflow
