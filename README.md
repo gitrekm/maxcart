@@ -26,15 +26,19 @@ What we will learn?
 
 ## Business requirements
 1. Business problem#1
+
 retargeting customers with abandonment cart within 3 min maximum of the session expiration The use case basically is to increase sales conversion by reducing cart abandonment. the output. the retargeting format is to send a personalized email to the subscriber offering free shipping.
 
 2. Business problem#2
+
 Identifying products with the most sales attraction in the future in order to anticipate the supplyThe use case basically is to increase sales conversion by reducing cart abandonment. the output.
 
 3. Business problem#3
+
 Calculate Customer lifetime value
 
 4. Business problem#4
+
 visualize sales data per product within 30 to 45 seconds once the payment is done
 
 ## Technical requirements
