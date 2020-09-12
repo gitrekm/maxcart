@@ -55,6 +55,28 @@ visualize sales data per product within 30 to 45 seconds once the payment is don
 * setup continuous integration and continuous delivery chain
 
 ## Dataset
+### 1. Description
+
+This data contains behavior data for 5 months (Oct 2019 – Feb 2020) from a medium cosmetics online store.Each row in the file represents an event. All events are related to products and users. Each event is like many-to-many relation between products and users.Note: if this dataset is too small for you, you can try larger dataset from multi-category store.There are different types of events. See below.Semantics (or how to read it):User userid during session usersession added to shopping cart (property eventtype is equal cart) product productid of the brand of category code (category code) with price at event_time
+
+### 2. Structure
+event_timeThe time when the event happened at (in UTC).event_type
+Events can be:
+- view – a user viewed a product
+- cart – a user added a product to shopping cart
+- removefromcart – a user removed a product from the shopping cart
+- purchase – a user purchased a product
+
+Typical funnel: view => cart => purchase.
+
+product_id: ID of a product
+category_id: Product’s category ID
+category_code: Product’s category taxonomy (code name) if it was possible to make it. Usually present for meaningful categories and skipped for different kinds of accessories.
+brand: The downcased string of brand names. Can be missed.
+price: price of a product.
+user_id: Permanent user ID.
+user_session: Temporary user’s session ID. Same for each user’s session. Is changed every time user comes back to the online store from a long pause.
+
 ## How to choose storage option
 ## streaming pipeline with Google Cloud Dataflow
 ## Batch processing pipeline with Dataproc
